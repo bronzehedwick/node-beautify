@@ -4,14 +4,18 @@ Node-Beautify is a node.js module that can be easily required and used to beauti
 
 ## Installation
 
-    npm install node-beautify
+```sh
+npm install node-beautify
+```
 
 ## Usage
 
 to beautify javascript:
 
-        require('node-beautify').beautifyJs(source, options);
-        
+```javascript
+require('node-beautify').beautifyJs(source, options);
+```
+
 where
     source is a string of javascript source code and options (optional) allows overriding the defaults (see below)
 
@@ -27,31 +31,41 @@ where
 
 
 ## Example
-    // require the module
-    var nb = require('node-beautify');
+```javascript
+// require the module
+var nb = require('node-beautify');
 
-    // pass a string of ugly javascript to the beautifyJs method
-    var prettyJs = nb.beautifyJs("function test(){console.log('test');}");
+// pass a string of ugly javascript to the beautifyJs method
+var prettyJs = nb.beautifyJs("function test(){console.log('test');}");
 
-    // the results should be a nicely formatted javascript string
-    console.log(prettyJs);
+// the results should be a nicely formatted javascript string
+console.log(prettyJs);
+```
 
 ## To run tests
 Mocha should be installed globally.  If it is not, you can install it by typing
 
-    npm install mocha -g
+```sh
+npm install mocha -g
+```
 
 Clone the repository using git, e.g.
 
-    git clone https://github.com/fshost/node-beautify
+```sh
+git clone https://github.com/fshost/node-beautify
+```
     
 After the repo has been cloned, in the repo directory type
 
-    npm install
+```sh
+npm install
+```
 
 After all dependencies are installed, the tests can be run by typing
     
-    mocha
+```sh
+mocha
+```
 
 ## Requirements
 
